@@ -23,8 +23,21 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
-  
-  
+  <style>
+    .bigger {
+        font-size: 2.5em;
+    }
+</style>
+  <script language="JavaScript">
+    function changeStuff() {
+        oceans = document.getElementById("oceans");
+        oceans.className = "bigger";
+    }
+    function undochangeStuff() {
+        oceans = document.getElementById("oceans");
+        oceans.className = "";
+    }
+</script>
   
 </head>
 <body>
@@ -69,7 +82,7 @@
                 <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-3 display-1">
                     <strong>Marine Plastic Pollution</strong></h1>
                 
-                <p class="mbr-fonts-style mbr-text mbr-white mb-3 display-7">Our oceans are dying. What is causing the rapid decline in marine life? What can we do to stop the demise of an important and beloved ecosystem?</p>
+                <p id="oceans" onmouseover="javascript:changeStuff()" onmouseout="javascript:undochangeStuff()" class="mbr-fonts-style mbr-text mbr-white mb-3 display-7">Our oceans are dying. What is causing the rapid decline in marine life? What can we do to stop the demise of an important and beloved ecosystem?</p>
 
                 
             </div>
